@@ -40,3 +40,4 @@ int main(){
 	printf("densidade populacional: %2.f\n", densidade2);
 	printf("pib per capital: %2.f\n", pibc2);
 	return 0;
+}
