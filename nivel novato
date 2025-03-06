@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(){
 	int pop,ndpt,pop2,ndpt2;
 	float area,pib,area2,pib2;
