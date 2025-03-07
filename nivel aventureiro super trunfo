@@ -1,71 +1,44 @@
 #include <stdio.h>
 
 int main() {
-    int ndpt, ndpt2;
-    unsigned long int pop, pop2;
+    int pop, ndpt, pop2, ndpt2;
     float area, pib, area2, pib2, densidade, densidade2, pibc, pibc2;
-    double super, super2;
-
     printf("DADOS DA PRIMEIRA CARTA \n");
-    printf("qual a populacao? ");
-    scanf("%lu", &pop);
+    printf("qual a populacao ? ");
+    scanf("%d", &pop);
     printf("qual a area? ");
     scanf("%f", &area);
     printf("qual o pib? ");
     scanf("%f", &pib);
     printf("quantos numeros turisticos tem? ");
     scanf("%d", &ndpt);
-
     densidade = (float) pop / area;
-    pibc = pib * 1000000000.0 / pop;
-    super = ((double) ndpt + (double) pop + (double) area + (double) pib + (double) pibc) - densidade;
-
-    printf("---------------------------------------\n");
-
+    pibc = pib * (float) 1000000000 / (float) pop;
     printf("DADOS DA SEGUNDA CARTA\n");
-    printf("qual a populacao? ");
-    scanf("%lu", &pop2);
+    printf("qual a populacao ? ");
+    scanf("%d", &pop2);
     printf("qual a area? ");
     scanf("%f", &area2);
     printf("qual o pib? ");
     scanf("%f", &pib2);
     printf("quantos numeros turisticos tem? ");
     scanf("%d", &ndpt2);
-
     densidade2 = (float) pop2 / area2;
-    pibc2 = pib2 * 1000000000.0 / pop2;
-    super2 = ((double) ndpt2 + (double) pop2 + (double) area2 + (double) pib2 + (double) pibc2) - densidade2;
-
-    printf("--------------------------------------------\n");
-
+    pibc2 = pib2 * (float) 1000000000 / (float) pop2;
     printf("TODOS OS DADOS REGISTRADOS DA PRIMEIRA CARTA \n");
-    printf("populacao: %lu de habitantes\n", pop);
+    printf("populacao: %d de habitantes\n", pop);
     printf("area: %.2f de metros quadrados\n", area);
     printf("pib: %.2f\n", pib);
     printf("numeros de pontos turisticos: %d\n", ndpt);
     printf("densidade populacional: %.2f\n", densidade);
     printf("pib per capita: %.2f\n", pibc);
-    printf("super poder total da carta: %f\n", super);
-
-    printf("--------------------------------------------\n");
-
     printf("TODOS OS DADOS REGISTRADOS DA SEGUNDA CARTA \n");
-    printf("populacao: %lu de habitantes\n", pop2);
+    printf("populacao: %d de habitantes\n", pop2);
     printf("area: %.2f de metros quadrados\n", area2);
     printf("pib: %.2f\n", pib2);
     printf("numeros de pontos turisticos: %d\n", ndpt2);
     printf("densidade populacional: %.2f\n", densidade2);
     printf("pib per capita: %.2f\n", pibc2);
-    printf("super poder total da carta: %f\n", super2);
 
-    printf("-------------------------------------------\n");
-
-    printf("comparacao de dados\n");
-    printf("pop > pop2 %d\n", pop > pop2);
-    printf("area > area2 %d\n", area > area2);
-    printf("pib > pib2 %d\n",pib > pib2);
-    printf("ndpt >ndpt2 %d\n",ndpt >ndpt2);
-    printf("pibc > pibc2 %d\n ",ndpt > ndpt2);
-    printf("super >super2 %d\n",ndpt > ndpt2);
-
-    return 0;
+	return 0;
+}
