@@ -9,11 +9,11 @@ int main() {
 
     printf("DADOS DA PRIMEIRA CARTA \n");
     printf("nome do estado: ");
-    scanf("%s",&estado);
+    scanf("%s",estado);
     printf("numero do codigo: ");
-    scanf("%s",&codigo);
+    scanf("%s",codigo);
     printf("nome da cidade: ");
-    scanf("%s",&cidade);
+    scanf("%s",cidade);
     printf("qual a populacao: ");
     scanf("%lu", &pop);
     printf("qual a area: ");
@@ -31,11 +31,11 @@ int main() {
 
     printf("DADOS DA SEGUNDA CARTA\n");
     printf("nome do estado: ");
-    scanf("%s",&estado2);
+    scanf("%s",estado2);
     printf("numero do codigo: ");
-    scanf("%s",&codigo2);
+    scanf("%s",codigo2);
     printf("nome da cidade: ");
-    scanf("%s",&cidade2);
+    scanf("%s",cidade2);
     printf("qual a populacao: ");
     scanf("%lu", &pop2);
     printf("qual a area: ");
