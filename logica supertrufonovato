@@ -1,0 +1,90 @@
+#include <stdio.h>
+
+int main() {
+    int ndpt, ndpt2;
+    unsigned long int pop, pop2;
+    float area, pib, area2, pib2, densidade, densidade2, pibc, pibc2;
+    double super, super2;
+    char estado[50],cidade[50],codigo[4],estado2[50],cidade2[50],codigo2[4];
+
+    printf("DADOS DA PRIMEIRA CARTA \n");
+    printf("nome do estado: ");
+    scanf("%s",&estado);
+    printf("numero do codigo: ");
+    scanf("%s",&codigo);
+    printf("nome da cidade: ");
+    scanf("%s",&cidade);
+    printf("qual a populacao: ");
+    scanf("%lu", &pop);
+    printf("qual a area: ");
+    scanf("%f", &area);
+    printf("qual o pib: ");
+    scanf("%f", &pib);
+    printf("quantos numeros turisticos tem: ");
+    scanf("%d", &ndpt);
+
+    densidade = (float) pop / area;
+    pibc = pib * 1000000000.0 / pop;
+    super = ((double) ndpt + (double) pop + (double) area + (double) pib + (double) pibc) - densidade;
+
+    printf("---------------------------------------\n");
+
+    printf("DADOS DA SEGUNDA CARTA\n");
+    printf("nome do estado: ");
+    scanf("%s",&estado2);
+    printf("numero do codigo: ");
+    scanf("%s",&codigo2);
+    printf("nome da cidade: ");
+    scanf("%s",&cidade2);
+    printf("qual a populacao: ");
+    scanf("%lu", &pop2);
+    printf("qual a area: ");
+    scanf("%f", &area2);
+    printf("qual o pib: ");
+    scanf("%f", &pib2);
+    printf("quantos numeros turisticos tem: ");
+    scanf("%d", &ndpt2);
+
+    densidade2 = (float) pop2 / area2;
+    pibc2 = pib2 * 1000000000.0 / pop2;
+    super2 = ((double) ndpt2 + (double) pop2 + (double) area2 + (double) pib2 + (double) pibc2) - densidade2;
+
+    printf("--------------------------------------------\n");
+
+    printf("TODOS OS DADOS REGISTRADOS DA PRIMEIRA CARTA \n");
+    printf("estado: %s\n",estado);
+    printf("codigo: %s\n",codigo);
+    printf("cidade: %s\n",cidade);
+    printf("populacao: %lu de habitantes\n", pop);
+    printf("area: %.2f de km²\n", area);
+    printf("pib: %.2f\n", pib);
+    printf("numeros de pontos turisticos: %d\n", ndpt);
+    printf("densidade populacional: %.2f\n", densidade);
+    printf("pib per capita: %.2f\n", pibc);
+    printf("super poder total da carta: %f\n", super);
+
+    printf("--------------------------------------------\n");
+
+    printf("TODOS OS DADOS REGISTRADOS DA SEGUNDA CARTA \n");
+    printf("estado: %s\n",estado2);
+    printf("codigo: %s\n",codigo2);
+    printf("cidade: %s\n",cidade2);
+    printf("populacao: %lu de habitantes\n", pop2);
+    printf("area: %.2f de km²\n", area2);
+    printf("pib: %.2f\n", pib2);
+    printf("numeros de pontos turisticos: %d\n", ndpt2);
+    printf("densidade populacional: %.2f\n", densidade2);
+    printf("pib per capita: %.2f\n", pibc2);
+    printf("super poder total da carta: %f\n", super2);
+
+    printf("-------------------------------------------\n");
+
+	if(super > super2){
+		printf(" carta 1 venceu por ter mais poder ");
+	}else{
+		printf(" carta 2 venceu por ter mais poder ");
+	}
+
+
+    return 0;
+}  
