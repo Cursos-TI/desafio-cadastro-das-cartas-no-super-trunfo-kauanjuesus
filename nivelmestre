@@ -25,7 +25,7 @@ int main() {
 
     densidade = (float) pop / area;
     pibc = pib * 1000000000.0 / pop;
-    super = ((double) ndpt + (double) pop + (double) area + (double) pib + (double) pibc) - densidade;
+    super = ((double) ndpt + (double) pop + (double) area + (double) pib + (double) pibc) - 1/densidade;
 
     printf("---------------------------------------\n");
 
@@ -47,7 +47,7 @@ int main() {
 
     densidade2 = (float) pop2 / area2;
     pibc2 = pib2 * 1000000000.0 / pop2;
-    super2 = ((double) ndpt2 + (double) pop2 + (double) area2 + (double) pib2 + (double) pibc2) - densidade2;
+    super2 = ((double) ndpt2 + (double) pop2 + (double) area2 + (double) pib2 + (double) pibc2) - 1/densidade2;
 
     printf("--------------------------------------------\n");
 
