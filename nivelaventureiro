@@ -2,7 +2,8 @@
 
 int main() {
     int pop, ndpt, pop2, ndpt2;
-    float area, pib, area2, pib2, densidade, densidade2, pibc, pibc2;
+    float area, pib, area2, pib2, densidade, densidade2, pibc, pibc2;	
+
     printf("DADOS DA PRIMEIRA CARTA \n");
     printf("qual a populacao ? ");
     scanf("%d", &pop);
@@ -14,6 +15,7 @@ int main() {
     scanf("%d", &ndpt);
     densidade = (float) pop / area;
     pibc = pib * (float) 1000000000 / (float) pop;
+
     printf("DADOS DA SEGUNDA CARTA\n");
     printf("qual a populacao ? ");
     scanf("%d", &pop2);
@@ -25,6 +27,7 @@ int main() {
     scanf("%d", &ndpt2);
     densidade2 = (float) pop2 / area2;
     pibc2 = pib2 * (float) 1000000000 / (float) pop2;
+
     printf("TODOS OS DADOS REGISTRADOS DA PRIMEIRA CARTA \n");
     printf("populacao: %d de habitantes\n", pop);
     printf("area: %.2f de metros quadrados\n", area);
@@ -32,6 +35,7 @@ int main() {
     printf("numeros de pontos turisticos: %d\n", ndpt);
     printf("densidade populacional: %.2f\n", densidade);
     printf("pib per capita: %.2f\n", pibc);
+
     printf("TODOS OS DADOS REGISTRADOS DA SEGUNDA CARTA \n");
     printf("populacao: %d de habitantes\n", pop2);
     printf("area: %.2f de metros quadrados\n", area2);
